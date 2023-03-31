@@ -6,12 +6,7 @@
     "url": "https://github.com/lcomplete/huntly/releases/download/v0.3.2/huntly-server-0.3.2.jar",
     "hash": "sha256:47f8d57dae009ee8b8b09c7769ec444d99bd7898fbe3c8177ed229542a756efb",
     "checkver": "github: https://github.com/lcomplete/huntly",
-    "bin": [
-	    [
-		    "huntly-server.bat",
-		    "huntly-server"
-	    ]
-    ],
+    "bin": "huntly-server.bat",
     "autoupdate":{
 		"url": "https://github.com/lcomplete/huntly/releases/download/v$version/huntly-server-$version.jar",
         	"hash": {
