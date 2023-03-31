@@ -7,7 +7,7 @@
     "checkver": "github",
     "bin":[
 	    [
-		    "huntly-server"
+		    "huntly-server-$verion.jar"
 	    ]
     ],
     "autoupdate":{
