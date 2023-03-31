@@ -1,0 +1,12 @@
+{
+    "version": "huntly-server-0.3.2.jar",
+    "description": "Huntly, information management tool, rss reader, automatic saving browsed contents include tweets, github stars management tool. ----> this is the server jar",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/lcomplete/huntly",
+    "url": "https://github.com/lcomplete/huntly/releases/download/v0.3.2/huntly-server-0.3.2.jar",
+    "checkver": "github",
+    "autoupdate":{
+	"url": "https://github.com/lcomplete/huntly/releases/download/v$version/huntly-server-$version.jar"
+    }
+
+}
