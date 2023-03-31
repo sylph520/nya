@@ -13,5 +13,12 @@
     ],
     "autoupdate":{
 		"url": "https://github.com/lcomplete/huntly/releases/download/v$version/huntly-server-$version.jar"
+    },
+    "installer": {
+        "script": [
+            "$batFile = Join-Path \"$dir\" \"huntly-server.bat\"",
+            "$content = '@echo off`r`njava -jar %~dp0huntly-server-0.3.2.jar %*'",
+            "Set-Content -Path $batFile -Value $content"
+        ]
     }
 }
