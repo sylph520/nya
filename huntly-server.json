@@ -5,7 +5,12 @@
     "homepage": "https://github.com/lcomplete/huntly",
     "url": "https://github.com/lcomplete/huntly/releases/download/v0.3.2/huntly-server-0.3.2.jar",
     "checkver": "github: https://github.com/lcomplete/huntly",
-    "bin": "huntly-server-0.3.2.jar",
+    "bin": [
+	    [
+		    "huntly-server-0.3.2.jar",
+		    "huntly-server"
+	    ]
+    ],
     "autoupdate":{
 		"url": "https://github.com/lcomplete/huntly/releases/download/v$version/huntly-server-$version.jar"
     }
