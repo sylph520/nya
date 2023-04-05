@@ -21,7 +21,7 @@
     "installer": {
         "script": [
             "$batFile = Join-Path \"$dir\" \"huntly-server.bat\"",
-            "$content = '@echo off`r`njava -jar %~dp0huntly-server-0.3.2.jar %*'",
+            "$content = '@echo off`r`njava -Xms128m -Xmx1024m -jar %~dp0huntly-server-$version.jar --server.port=8123 %*'",
             "Set-Content -Path $batFile -Value $content"
         ]
     }
