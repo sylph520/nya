@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - master
+  schedule:
+  - cron: '1 0 * * *'
+name: Excavator
+jobs:
+  excavate:
+    name: Excavator
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: Excavator
+      uses: ScoopInstaller/GithubActions@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_UPDATED: '1'
+        THROW_ERROR: '0'
