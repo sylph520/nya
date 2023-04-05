@@ -8,7 +8,7 @@
     "checkver": "github",
     "bin": [
 	    [
-	    	"huntly-server-0.3.2.jar",
+	    	"huntly-server-$version.jar",
 	    	"huntly-server"
 	    ]
     ],
