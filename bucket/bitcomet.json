@@ -1,0 +1,29 @@
+{
+    "version": "2.01",
+    "homepage": "https://www.bitcomet.com/en/archive",
+    "description": "BitComet is a BitTorrent/HTTP/FTP download client and supports many modern bittorrent protocol, e.g. Magnet Link, HTTP Seeding, DHT network, UDP tracker Protocol v2.",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.bitcomet.com/en/license"
+    },
+    "url": "https://download.bitcomet.com/achive/BitComet_2.01.zip",
+    "hash": "sha1:73efb7687a256a5b1b5c80dbc2885f1aea317da4",
+    "extract_dir": "BitComet",
+    "bin": [
+        [
+            "BitComet.exe",
+            "BitComet"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "BitComet.exe",
+            "BitComet"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.bitcomet.com/en/archive",
+        "regex": ">v([\\d.]+)<"
+    },
+    "https://download.bitcomet.com/achive/BitComet_$version.zip"
+}
