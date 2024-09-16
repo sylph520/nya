@@ -1,0 +1,15 @@
+{
+  "version": "0.1.6",
+  "url": "https://github.com/itchyny/mmv/releases/download/v0.1.6/mmv_v0.1.6_windows_amd64.zip",
+  "description": "mmv is a simple and small utility to rename multiple files using a text editor.",
+  "license": "MIT",
+  "bin": "mmv.exe",
+  "extract_dir": "mmv_v0.1.6_windows_amd64",
+  "homepage": "https://github.com/itchyny/mmv",
+  "checkver": {
+    "github": "https://github.com/itchyny/mmv"
+  },
+  "autoupdate": {
+    "url": "https://github.com/itchyny/mmv/releases/download/v$version/mmv_v$version_windows_amd64.zip"
+  }
+}
