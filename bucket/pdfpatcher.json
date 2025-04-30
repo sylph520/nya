@@ -1,0 +1,27 @@
+{
+  "version": "1.1.0.4632",
+  "description": "A .NET application for patching PDF files.",
+  "homepage": "https://github.com/wmjordan/PDFPatcher",
+  "license": "GPL-3.0-only",
+  "url": "https://github.com/wmjordan/PDFPatcher/releases/download/v1.1/PDFPatcher.1.1.0.4632.7z",
+  "hash": "624D839CC860B6D84696E3BB725CCC88B4C616238F14FA208DECB3BD78FAE750",
+  "bin": "PDFPatcher.exe",
+  "shortcuts": [
+    [
+      "PDFPatcher.exe",
+      "PDFPatcher"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/wmjordan/PDFPatcher/releases",
+    "regex": "PDFPatcher.(\\d+\\.\\d+).([\\d.]+).7z",
+    "replace": "${1}.${2}"
+  },
+  "autoupdate": {
+    "url": "https://github.com/wmjordan/PDFPatcher/releases/download/v$1/PDFPatcher.$version.7z",
+    "hash": {
+      "url": "$url",
+      "regex": "$sha256"
+    }
+  }
+}
