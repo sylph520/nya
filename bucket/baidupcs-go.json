@@ -1,0 +1,13 @@
+{
+  "bin": "BaiduPCS-Go.exe",
+  "version": "v3.9.7",
+  "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.9.7/BaiduPCS-Go-v3.9.7-windows-x64.zip",
+  "hash": "2C8F4728AC29153F71187A26C85D5BE0E2419A64D591A74F821D3C57622EEB81",
+  "extract_dir": "BaiduPCS-Go-v3.9.7-windows-x64",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/qjfoidnh/BaiduPCS-Go",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/$version/BaiduPCS-Go-$version-windows-x64.zip"
+  }
+}
