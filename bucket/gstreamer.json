@@ -1,4 +1,5 @@
 {
+{
     "homepage": "https://gstreamer.freedesktop.org/",
     "version": "1.28.2",
     "description": "Open-source multimedia framework core library",
@@ -14,6 +15,10 @@
         "32bit": {
             "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86-1.28.2.exe",
             "hash": "89ba9b8d8f521addfdc989e6411aec2cf3ab9bd5ec002b53a7e39d8ef4dec26a"
+        },
+        "arm64": {
+            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-arm64-1.28.2.exe",
+            "hash": "5ac10e24f8b6d56e12aba2881c4383eb64b7e24c02800998dc7513ed555ed90e"
         }
     },
     "bin": [
@@ -49,18 +54,19 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gstreamer.freedesktop.org/data/pkg/windows/$version/msvc/gstreamer-1.0-msvc-x86_64-$version.msi"
+                "url": "https://gstreamer.freedesktop.org/data/pkg/windows/$version/msvc/gstreamer-1.0-msvc-x86_64-$version.exe"
             },
             "32bit": {
-                "url": "https://gstreamer.freedesktop.org/data/pkg/windows/$version/msvc/gstreamer-1.0-msvc-x86-$version.msi"
+                "url": "https://gstreamer.freedesktop.org/data/pkg/windows/$version/msvc/gstreamer-1.0-msvc-x86-$version.exe"
+            },
+            "arm64": {
+                "url": "https://gstreamer.freedesktop.org/data/pkg/windows/$version/msvc/gstreamer-1.0-msvc-arm64-$version.exe"
             }
         },
         "hash": {
             "url": "$url.sha256sum"
         }
     },
-    "pre_install": [
-        "if ($architecture -eq \"64bit\") { Move-Item -Path $dir/gstreamer/1.0/msvc_x86_64/* $dir  } elseif ($architecture -eq \"32bit\") { Move-Item -Path $dir/gstreamer/1.0/msvc_x86/* $dir }",
-        "Remove-Item -Path $dir/gstreamer -Force -Recurse"
-    ]
+    "innosetup": true,
+    "depends": "versions/innounp-unicode"
 }
