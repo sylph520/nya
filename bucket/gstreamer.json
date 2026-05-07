@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86_64-1.28.2.exe",
-            "hash": "72c786c7b9455c8f43663da2446508305da59498cff9b9765a7461f217982770"
+            "hash": "6dd72c370efa0dc4e1098940da36a4d591fd687579faf77a3c055d3aa30e6752"
         },
         "32bit": {
             "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86-1.28.2.exe",
-            "hash": "b6abf10f7ebf9d59e3ae57855c0d73c00f17572d5f90f1b9760e1f6fc8839923"
+            "hash": "89ba9b8d8f521addfdc989e6411aec2cf3ab9bd5ec002b53a7e39d8ef4dec26a"
         }
     },
     "bin": [
