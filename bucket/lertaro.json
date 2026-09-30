@@ -1,19 +1,25 @@
 {
-    "version": "5.7.5",
+    "version": "5.8.0",
     "description": "Portable global search and productivity launcher for Windows",
     "homepage": "https://github.com/Lertaro/Lertaro",
     "license": "MIT",
+    "depends": "windowsdesktop-runtime",
     "extract_dir": "Lertaro",
+    "pre_install": [
+        "$launcher = @'\n@echo off\nsetlocal\nset \"DOTNET_ROOT=%ProgramFiles%\\dotnet\"\ncd /d \"%~dp0\"\nstart \"\" \"Lertaro.App.exe\" %*\n'@",
+        "Set-Content -LiteralPath \"$dir\\lertaro.cmd\" -Value $launcher -Encoding Ascii"
+    ],
+    "shortcuts": [["lertaro.cmd", "lertaro"]],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.7.5/Lertaro-Portable.zip",
-            "hash": "21dd549214244a34cf12b10ad64d96774111fa7a5433942ff615c67c4765cf74",
-            "bin": [["Lertaro.App.exe", "Lertaro"]]
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.8.0/Lertaro-Portable.zip",
+            "hash": "680b13e526b8a916af68f4b06b7e3c82cd2cba8b13f019990a41aaf54404470d",
+            "bin": [["lertaro.cmd", "lertaro"]]
         },
         "arm64": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.7.5/Lertaro-Portable-arm64.zip",
-            "hash": "510ca449b7d01ed53139339644001a7a1e2d2ec0636dcfa160271511ce03fc7a",
-            "bin": [["Lertaro.App.exe", "Lertaro"]]
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.8.0/Lertaro-Portable-arm64.zip",
+            "hash": "5d8758b37f03692ff61b2c7b59a2a18caee22aa5e0b79b12ee7df904fdac2aa3",
+            "bin": [["lertaro.cmd", "lertaro"]]
         }
     },
     "checkver": {
