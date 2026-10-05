@@ -1,25 +1,46 @@
 {
-    "version": "5.8.0",
+    "version": "5.8.2",
     "description": "Portable global search and productivity launcher for Windows",
     "homepage": "https://github.com/Lertaro/Lertaro",
     "license": "MIT",
     "depends": "windowsdesktop-runtime",
     "extract_dir": "Lertaro",
     "pre_install": [
-        "$launcher = @'\n@echo off\nsetlocal\nset \"DOTNET_ROOT=%ProgramFiles%\\dotnet\"\ncd /d \"%~dp0\"\nstart \"\" \"Lertaro.App.exe\" %*\n'@",
+        "$launcher = @'
+@echo off
+setlocal
+set \"DOTNET_ROOT=%ProgramFiles%\\dotnet\"
+cd /d \"%~dp0\"
+start \"\" \"Lertaro.App.exe\" %*
+'@",
         "Set-Content -LiteralPath \"$dir\\lertaro.cmd\" -Value $launcher -Encoding Ascii"
     ],
-    "shortcuts": [["lertaro.cmd", "lertaro"]],
+    "shortcuts": [
+        [
+            "lertaro.cmd",
+            "lertaro"
+        ]
+    ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.8.0/Lertaro-Portable.zip",
-            "hash": "680b13e526b8a916af68f4b06b7e3c82cd2cba8b13f019990a41aaf54404470d",
-            "bin": [["lertaro.cmd", "lertaro"]]
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.8.2/Lertaro-Portable.zip",
+            "hash": "42e81a69be881789b0b25ca48179826108ffd94d082f5845b43fe88b0da37d36",
+            "bin": [
+                [
+                    "lertaro.cmd",
+                    "lertaro"
+                ]
+            ]
         },
         "arm64": {
-            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.8.0/Lertaro-Portable-arm64.zip",
-            "hash": "5d8758b37f03692ff61b2c7b59a2a18caee22aa5e0b79b12ee7df904fdac2aa3",
-            "bin": [["lertaro.cmd", "lertaro"]]
+            "url": "https://github.com/Lertaro/Lertaro/releases/download/v5.8.2/Lertaro-Portable-arm64.zip",
+            "hash": "f6ea34186ca5e67921b3b52ef2bf1a93b1b48452440aec80bb197113caa24cde",
+            "bin": [
+                [
+                    "lertaro.cmd",
+                    "lertaro"
+                ]
+            ]
         }
     },
     "checkver": {
