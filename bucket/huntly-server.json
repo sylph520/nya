@@ -1,22 +1,22 @@
 {
-    "version": "0.3.2",
+    "version": "0.6.6",
     "description": "Huntly, information management tool, rss reader, automatic saving browsed contents include tweets, github stars management tool. ----> this is the server jar",
     "license": "Apache-2.0",
     "homepage": "https://github.com/lcomplete/huntly",
-    "url": "https://github.com/lcomplete/huntly/releases/download/v0.3.2/huntly-server-0.3.2.jar",
-    "hash": "sha256:47f8d57dae009ee8b8b09c7769ec444d99bd7898fbe3c8177ed229542a756efb",
+    "url": "https://github.com/lcomplete/huntly/releases/download/v0.6.6/huntly-server-0.6.6.jar",
+    "hash": "0c582280a8fcf86ac25161c151b6fe3611892a8def51e401dbf493b587eb43ab",
     "checkver": "github",
     "bin": [
-	    [
-	    	"huntly-server-$version.jar",
-	    	"huntly-server"
-	    ]
+        [
+            "huntly-server-$version.jar",
+            "huntly-server"
+        ]
     ],
-    "autoupdate":{
-		"url": "https://github.com/lcomplete/huntly/releases/download/v$version/huntly-server-$version.jar",
-        	"hash": {
-            		"url": "$url.sha256"
-        	}
+    "autoupdate": {
+        "url": "https://github.com/lcomplete/huntly/releases/download/v$version/huntly-server-$version.jar",
+        "hash": {
+            "url": "$url.sha256"
+        }
     },
     "installer": {
         "script": [
