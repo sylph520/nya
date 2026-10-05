@@ -1,6 +1,6 @@
 {
     "homepage": "https://gstreamer.freedesktop.org/",
-    "version": "1.28.2",
+    "version": "1.28.7",
     "description": "Open-source multimedia framework core library",
     "license": {
         "identifier": "LGPL-2.1",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86_64-1.28.2.exe",
-            "hash": "6dd72c370efa0dc4e1098940da36a4d591fd687579faf77a3c055d3aa30e6752"
+            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.7/msvc/gstreamer-1.0-msvc-x86_64-1.28.7.exe",
+            "hash": "032fc6062b8539838fc8da22589cb9b24c5d820baa7f8cc160af9ea08395badf"
         },
         "32bit": {
-            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-x86-1.28.2.exe",
-            "hash": "89ba9b8d8f521addfdc989e6411aec2cf3ab9bd5ec002b53a7e39d8ef4dec26a"
+            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.7/msvc/gstreamer-1.0-msvc-x86-1.28.7.exe",
+            "hash": "8e72dfcbeb8558bdd02824cae1e9acc9a11757743135ba167dffecfabce46697"
         },
         "arm64": {
-            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.2/msvc/gstreamer-1.0-msvc-arm64-1.28.2.exe",
-            "hash": "5ac10e24f8b6d56e12aba2881c4383eb64b7e24c02800998dc7513ed555ed90e"
+            "url": "https://gstreamer.freedesktop.org/data/pkg/windows/1.28.7/msvc/gstreamer-1.0-msvc-arm64-1.28.7.exe",
+            "hash": "eb8bd2547d52a96c570f82b0c581fa5a8992f672aba7fb9668370536f203d1f8"
         }
     },
     "bin": [
