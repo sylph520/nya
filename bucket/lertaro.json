@@ -5,6 +5,7 @@
     "license": "MIT",
     "depends": "windowsdesktop-runtime",
     "extract_dir": "Lertaro",
+    "persist": "Data",
     "pre_install": [
         "$launcher = @'
 @echo off
